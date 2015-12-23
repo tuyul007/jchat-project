@@ -77,7 +77,7 @@ public class RegisterActivity extends AppCompatActivity {
                 email.setText("");
                 password.setText("");
                 radioMale.setChecked(true);
-                //asdsasdasadsasadcjcjcjjcjc
+                //asdsasdasadsasadcjcjcjjcjcTAI
             }
         });
     }
