@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.bluejack151.JChat.jchat3.RegisterActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/fieldRegisDisplayName"
+        android:hint="Display Name"
+        android:layout_below="@+id/fieldRegisUserID"
+        android:layout_alignLeft="@+id/fieldRegisUserID"
+        android:layout_alignStart="@+id/fieldRegisUserID"
+        android:paddingBottom="@dimen/abc_action_bar_content_inset_material" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/fieldRegisUserID"
+        android:layout_marginTop="30dp"
+        android:hint="User ID"
+        android:layout_below="@+id/registText"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/abc_action_bar_content_inset_material" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Register"
+        android:id="@+id/registText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/fieldRegisEmail"
+        android:hint="Email"
+        android:layout_below="@+id/fieldRegisDisplayName"
+        android:layout_alignLeft="@+id/fieldRegisDisplayName"
+        android:layout_alignStart="@+id/fieldRegisDisplayName"
+        android:paddingBottom="@dimen/abc_action_bar_content_inset_material" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/fieldRegisPassword"
+        android:password="false"
+        android:hint="Password"
+        android:layout_below="@+id/fieldRegisEmail"
+        android:layout_alignLeft="@+id/fieldRegisEmail"
+        android:layout_alignStart="@+id/fieldRegisEmail"
+        android:paddingBottom="@dimen/abc_action_bar_content_inset_material" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitRegisButton"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/resetRegisButton"
+        android:layout_alignTop="@+id/submitRegisButton"
+        android:layout_alignRight="@+id/fieldRegisPassword"
+        android:layout_alignEnd="@+id/fieldRegisPassword" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_below="@+id/fieldRegisPassword"
+        android:layout_alignLeft="@+id/fieldRegisPassword"
+        android:layout_alignStart="@+id/fieldRegisPassword">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/regisRadioMale"
+            android:checked="true"
+            android:layout_below="@+id/fieldRegisPassword"
+            android:layout_alignLeft="@+id/fieldRegisPassword"
+            android:layout_alignStart="@+id/fieldRegisPassword" />
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/regisRadioFemale"
+            android:checked="false"
+            android:layout_below="@+id/fieldRegisPassword"
+            android:layout_toRightOf="@+id/submitRegisButton"
+            android:layout_toEndOf="@+id/submitRegisButton"
+            android:layout_weight="0.18" />
+
+    </RadioGroup>
+
+</RelativeLayout>
